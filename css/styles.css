@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #F7F7F7;
+}
+#app{
+    max-width: 1620px;
+    height: 100%;
+    margin: 0 auto;
+}
+.some-constainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    flex: 0 1 auto;
+    transition: transform 0.5s ease-in-out;
+}
+.box{
+    width: 100%;
+    flex-basis: calc(20% - 2 * 18px);
+    max-width: calc(20% - 2 * 18px);
+    flex: 0 0 auto;
+    flex-grow: 1;
+    padding: 0 18px;
+    height: 300px;
+}
+.img-holder{
+    height: 100%;
+    border-radius: 28px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
